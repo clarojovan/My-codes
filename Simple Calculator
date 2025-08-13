@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+  
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("Enter the first number: ");
+    double number1 = scanner.nextDouble();
+    scanner.nextLine();
+
+    System.out.println("Enter the second number: ");
+    double number2 = scanner.nextDouble();
+    scanner.nextLine();
+
+    System.out.println("Enter the operator (sum, subtract, multiple, division): ");
+    String operation = scanner.next();
+    scanner.nextLine();
+    
+    switch (operation) {
+        case "sum":
+            System.out.printf("%f / %f = %f", number1, number2, number1 + number2);
+            break;
+        case "subtract":
+            System.out.printf("%f / %f = %f",number1, number2, number1 - number2);
+            break;
+        case "multiple ":
+            System.out.printf("%f / %f = %f",number1, number2, number1 * number2);
+            break;
+        case "division":
+            System.out.printf("%f / %f = %f",number1, number2, number1 / number2);
+            break;
+        default:
+            System.out.printf("Invalid operator.", operation);
+            return;
+    }
+    
+    scanner.close();
+  }
+
+}
