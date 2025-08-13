@@ -1,0 +1,32 @@
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+    Random random = new Random();
+
+    int diceRoll = random.nextInt(6) + 1;
+
+    System.out.println("The dice you rolled is: " + diceRoll + "!");
+
+    switch (diceRoll) {
+      case 1:
+        System.out.println("You will have a good luck today!");
+        break;
+      case 2:
+        System.out.println("Others can help you now!");
+        break;
+      case 3:
+        System.out.println("Soon life will become interesting!");
+        break;
+      case 4:
+        System.out.println("Good news will come to you!");
+        break;
+      case 5:
+        System.out.println("Good fortune will be yours!");
+        break;
+      case 6:
+        System.out.println("Welcome changes!");
+        break;
+    }
+    }   
+}
